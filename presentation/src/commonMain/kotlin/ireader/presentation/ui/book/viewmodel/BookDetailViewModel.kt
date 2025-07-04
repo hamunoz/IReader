@@ -324,7 +324,8 @@ class BookDetailViewModel(
         sorting.value = if (type == currentSort.value.type) {
             currentSort.value.copy(isAscending = !currentSort.value.isAscending)
         } else {
-            currentSort.value.copy(type = type)
+            //currentSort.value.copy(type = type)
+            currentSort.value.copy(type = type, isAscending = true)
         }
     }
 }
